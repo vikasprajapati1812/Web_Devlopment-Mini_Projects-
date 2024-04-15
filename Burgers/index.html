@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burgers</title>
+    <link rel="icon" href="svgs/hamburger_svg.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+        integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <!-- ### font family google fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Caveat:wght@400..700&family=Madimi+One&family=Nosifer&display=swap" rel="stylesheet">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        h1{
+            font-family: "Madimi One", sans-serif;
+        }
+        .hero {
+            height: 100vh;
+            width: 100vw;
+
+            background-image: url(heroimagesbackground/bghero7.avif);
+            background-position: right;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .chefimg img:hover {
+            box-shadow:
+                8.1px 8.1px 20.8px rgba(0, 0, 0, 0.18),
+                14.5px 14.5px 34.9px rgba(0, 0, 0, 0.144),
+                21.7px 21.7px 44.2px rgba(0, 0, 0, 0.116),
+                60px 60px 80px rgba(0, 0, 0, 0.092);
+
+        
+        }
+
+        .bestburgers {
+            height: 100vh;
+            background-color: #cc1817;
+        }
+
+        .bestburgers2 {
+            height: 80vh;
+            background-image: url(heroimagesbackground/burgerrightside11.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .statistics {
+            height: 70vh;
+            background-color: #cc1817;
+        }
+
+        .card:hover {
+            box-shadow:
+                8.1px 8.1px 20.8px rgba(0, 0, 0, 0.18),
+                14.5px 14.5px 34.9px rgba(0, 0, 0, 0.144),
+                21.7px 21.7px 44.2px rgba(0, 0, 0, 0.116),
+                60px 60px 80px rgba(0, 0, 0, 0.092);
+
+        }
+
+        .updates {
+            height: 70vh;
+            background-image: url(heroimagesbackground/bghero1.jpg);
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="px-3 py-2 bg-transparent border-bottom">
+            <div class="container">
+                <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
+                    <a href="/"
+                        class="d-flex align-items-center my-2 my-lg-0 me-lg-auto text-dark text-decoration-none">
+                        <img src="svgs/hamburger_svg.png" alt="" height="50">
+                    </a>
+
+                    <ul
+                        class="nav col-12 col-lg-auto my-2 justify-content-center align-items-center my-md-0 text-small">
+                        <li>
+                            <a href="#" class="nav-link text-dark fw-bold">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#home"></use>
+                                </svg>
+                                Home
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-dark fw-bold">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#speedometer2"></use>
+                                </svg>
+                                Dashboard
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-dark fw-bold">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#speedometer2"></use>
+                                </svg>
+                                Product
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-dark fw-bold">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#table"></use>
+                                </svg>
+                                Promo
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-dark fw-bold">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#grid"></use>
+                                </svg>
+                                About
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-dark fw-bold">
+                                <svg class="bi d-block mx-auto mb-1" width="24" height="24">
+                                    <use xlink:href="#people-circle"></use>
+                                </svg>
+                                Contact
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- ############## Section hero ########## -->
+
+    <section class="hero">
+        <div class="container-fluid text-light p-5">
+            <div class="row">
+                <div class="col-lg-9">
+                    <h1 class="mt-5 pt-5 fw-bold">Get Cashback</h1>
+                    <h3>up to 50%</h3>
+
+
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+
+
+                    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Assumenda, asperiores voluptas? Officia
+                        dolorem ullam hic id necessitatibus dignissimos sint ad.</p>
+                </div>
+            </div>
+        </div>
+
+
+    </section>
+
+    <!-- ############## Section hero ########## -->
+
+    <!-- ############## Our Chefs ########## -->
+
+
+    <section class="chefs">
+        <div class="container text-center">
+            <div class="row my-5">
+                <h1 class="text-danger fw-bold">Our Chefs</h1>
+                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Facere totam quos repellat tenetur quis
+                    asperiores nostrum laborum iure temporibus quod! Praesentium aperiam quia similique delectus!</p>
+                <div class="chefimg col-lg-4 col-md-4 col-sm-4 my-5 text-center">
+                    <img src="image/chefs4.jfif" class="img-fluid rounded-circle" alt="">
+                    <h2 class="mt-3 fw-bold">Vikas Khanna</h2>
+                    <p>Founder</p>
+                </div>
+                <div class="chefimg col-lg-4 col-md-4 col-sm-4 my-4 text-center">
+                    <img src="image/chefs5.jfif" class="img-fluid rounded-circle" alt="">
+                    <h2 class="mt-3 fw-bold">Abcxyzpqr</h2>
+                    <p>Co-Founder</p>
+
+                </div>
+                <div class="chefimg col-lg-4 col-md-4 col-sm-4 my-4 text-center">
+                    <img src="image/chef2.jfif" class="img-fluid rounded-circle" alt="">
+                    <h2 class="mt-3 fw-bold">Abcxyzpqr</h2>
+                    <p>Co-Founder</p>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ############## Our Chefs ########## -->
+
+    <!-- ############## Best Burgers ########## -->
+
+    <section class="bestburgers">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-lg-6 mt-5 p-5 my-auto text-center">
+                    <img src="heroimagesbackground/bghero44.jpg" class="img-fluid rounded-circle" style="height: 200px;"
+                        alt="">
+                </div>
+                <div class="col-lg-6 mt-5 p-5">
+                    <h1 class="text-light">Best Burgers</h1>
+                    <p class="text-light">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio explicabo, nobis quibusdam
+                        molestias incidunt omnis tempora laboriosam consequuntur laborum cumque aperiam ipsum
+                        repellendus, dolorum aliquam hic sit dolor molestiae in?</p>
+                    <button class="btn btn-light fw-bold px-5 mt-3">Order Now</button>
+                </div>
+
+            </div>
+        </div>
+    </section>
+    <!-- ############## Best Burgers ########## -->
+
+
+    <!-- ############## Best Burgers 2 ########## -->
+
+    <section class="bestburgers2">
+        <div class="container d-flex justify-content-center align-items-center">
+            <div class="row">
+                <div class="col-lg-6 mt-5 ps-5">
+                    <h1 class="text-light fw-bold mt-5">Best Burgers</h1>
+                    <p class="text-light mt-3">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio explicabo,
+                        nobis quibusdam molestias incidunt omnis tempora laboriosam consequuntur laborum cumque aperiam
+                        ipsum repellendus, dolorum aliquam hic sit dolor molestiae in?</p>
+                    <button class="btn btn-danger fw-bold px-5 mt-3">Order Now</button>
+                </div>
+
+
+
+            </div>
+        </div>
+    </section>
+    <!-- ############## Best Burgers 2 ########## -->
+
+    <!-- ############## Statistics ########## -->
+
+    <section class="statistics">
+        <div class="container text-center">
+            <div class="row">
+                <h1 class="fw-bold mt-5 text-white">Statistics</h1>
+                <p class="mt-5 text-white">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias ut eum hic
+                    odio dicta at quasi, exercitationem itaque doloremque repellat veniam autem nobis odit consequatur.
+                </p>
+            </div>
+            <div class="row mt-5">
+                <div class="col-lg-4 col-md-4 col-sm-4 col-sm-4 text-white">
+                    <div class="rounded-circle border border-light mb-5">
+                        <h2>7K</h2>
+                        <p>CUSTOMERS</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 text-white">
+                    <div class="rounded-circle  border border-light mb-5">
+                        <h2>130</h2>
+                        <p>OUTLETS</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-4 col-sm-4 text-white">
+                    <div class="rounded-circle  border border-light mb-5">
+
+                        <h2>24</h2>
+                        <p>COUNTRIES</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- ############## Statistics ########## -->
+
+    <!-- ############## Popular package ########## -->
+
+    <section class="package">
+
+        <div class="container">
+            <div class="row my-5 text-center">
+                <h1 class="text-danger fw-bold my-3">Packages</h1>
+
+                <div class="col-lg-4">
+
+                    <div class="card" style="width: 18rem;">
+                        <img src="svgs/fast-food-burgersvg.svg" class="card-img-top" alt="...">
+                        <h4 class="text-danger fw-bold">$ 10</h4>
+
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button class="btn btn-danger">Order Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+
+                        <img src="svgs/hamburger_svg.png" class="card-img-top" alt="...">
+                        <h4 class="text-danger fw-bold">$ 20</h4>
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button class="btn btn-danger">Order Now</button>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card" style="width: 18rem;">
+
+                        <img src="svgs/hamburgerr_svg.png" class="card-img-top" alt="...">
+                        <h4 class="text-danger fw-bold">$ 30</h4>
+
+                        <div class="card-body">
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the card's content.</p>
+                            <button class="btn btn-danger">Order Now</button>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ############## Popular package ########## -->
+
+    <!-- ############## Updates ########## -->
+
+
+    <section class="updates ">
+        <div class="container">
+            <div class="row d-flex align-items-center justify-content-center">
+                <div class="col-lg-6 col-md-6 mt-5">
+                    <h1 class="text-danger fw-bold">Don't miss Our Updates</h1>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Praesentium unde distinctio sit
+                        accusantium! Perferendis, officia necessitatibus soluta aspernatur fuga molestias eligendi
+                        nostrum ex corporis possimus recusandae obcaecati voluptas. Illo, explicabo.</p>
+                    <div class="mb-3">
+
+
+                        <input type="email" class="form-control my-2 border border-dark" id="email" placeholder="Enter Email...">
+                        <button type="button" class="btn btn-danger">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ############## Updates ########## -->
+    <!-- ############## Footer ########## -->
+
+    <section class="foot">
+        <div class="container-fluid text-bg-dark">
+            <div class="row">
+                <div class="col-lg-3 col-md-3 col-sm-3 my-3">
+                    <h4 class="text-white fw-bold mb-3"> Title Here</h4>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit fuga nobis quis repellat incidunt exercitationem laudantium iste temporibus nulla eveniet?</p>
+                    <p><i class="fa-brands fa-google-plus-g fa-2x pe-2"></i><i class="fa-brands fa-facebook fa-2x pe-2"></i><i
+                            class="fa-brands fa-twitter fa-2x pe-2"></i><i class="fa-brands fa-square-instagram fa-2x"></i></p>
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-3 my-3">
+                    <h4 class="text-white fw-bold mb-3">About</h4>
+                    <p>History</p>
+                    <p>Our Teams</p>
+                    <p>Brand Guidlines</p>
+                    <p>Terms & Condition</p>
+                    <p>Privacy Policy</p>
+
+                </div>
+
+
+                <div class="col-lg-3 col-md-3 col-sm-3 my-3">
+                    <h4 class="text-white fw-bold mb-3">Services</h4>
+                    <p>How to Order</p>
+                    <p>Our Product</p>
+                    <p>Order Status</p>
+                    <p>Promo</p>
+                    <p>Payment Method</p>
+
+                </div>
+
+                <div class="col-lg-3 col-md-3 col-sm-3 my-3">
+                    <h4 class="text-white fw-bold mb-3">Other</h4>
+                    <p>Contact Us</p>
+                    <p>Help</p>
+                    <p>Privacy</p>
+
+                </div>
+
+            </div>
+            </div>
+    </section>
+
+    <!-- ############## Footer ########## -->
+
+
+
+</body>
+
+</html>
