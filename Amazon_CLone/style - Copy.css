@@ -1,0 +1,336 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Arial ,Times New Roman', Times, serif;
+}
+body{
+    background-color: #E6E6E6;
+    
+}
+
+.navbar{
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;   
+    background-color: #0f1111;
+}
+.nav-left{
+    /* flex: 25%; */
+    color: #D6d6d6;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap:30px;
+
+}
+.logo img{
+    height: 50px;
+    width: 115px;
+}
+.loc{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.loc>p{
+    margin-bottom: 0px; 
+          /* it is done because bydefault the margin top =0 and margin bottom is 1rem=16px in bootstrap */
+    font-size: 12px;
+    color: #CCCCCC;
+}
+.loc p:nth-child(2){
+    color: #FFFFFF;
+    font-size: 14px;
+    font-weight: 900;
+}
+
+.nav-search{
+    width: 50%;
+    height: 60px;
+    color: #0F1111;
+    font-size: 14px;
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+}
+.nav-search #all{
+    height: 35px;
+    width: 52px;
+    color: #0F1111;
+    border-top-left-radius: 5px ;
+    border-bottom-left-radius: 5px ;
+    border: none;
+    background-color: #E6E6E6;
+
+
+}.nav-search #search{
+    height: 35px;
+    width: 100%;
+    border: none;
+    padding-left: 10px;
+    font-size: 14px;
+    /* border: 2px solid transparent; */
+
+}
+#search:hover{
+    border: 2px solid orange;
+}
+.nav-search i{
+    height: 35px;
+    width: 45px;
+    background-color:#FFFFFF;
+    font-size: x-large;
+    background-color: rgb(243, 166, 24);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border: none;
+}
+
+
+.nav-right{
+    /* flex: 25%; */
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    align-items: center;
+    color: #f1f1f1;
+    
+    
+}
+
+
+
+.signin>p{
+    margin-bottom: 0px;
+          /* it is done because bydefault the margin top =0 and margin bottom is 1rem=16px in bootstrap */
+
+    color: #FFFFFF;
+    font-size: 12px;
+}
+.signin p:nth-child(2){
+    color: #FFFFFF;
+    font-size: 14px;
+    /* padding: 0px 0px 1px; */
+    /* letter-spacing: .5px; */
+    font-weight: 900;
+
+}
+.return>p{
+    margin-bottom: 0px;
+          /* it is done because bydefault the margin top =0 and margin bottom is 1rem=16px in bootstrap */
+
+    font-size: 12px;
+
+}
+.return p:nth-child(2){
+    font-size: 14px;
+    font-weight: 900;
+
+
+}.cart>p{
+    margin-bottom: 0px;
+
+}
+.cart{
+    display: flex;
+    gap: 5px;
+    font-weight: 700;
+    justify-content:center;
+    align-items: center;
+    border: 1px solid black;
+}
+.border:hover{
+    border: 2px solid white;
+}
+
+
+/* <!-- ##################navbelow --> */
+
+.navbelow{
+    display: flex;
+    gap: 10px;
+    flex-direction: row;
+    /* flex-wrap: nowrap; */
+    color: white;
+    background-color: #232F3E;
+    align-items: center;
+    /* padding: 8px 16px; */
+    /* height:40px ; */
+}
+.navbelow-con a{
+    color: white;
+    text-decoration: none;
+    /* padding-right: 4px; */
+}
+.navbelow-con{
+    border: 1px solid transparent;
+    padding: 8px;
+}
+
+.navbelow-con:hover{
+    border: 1px solid white;
+
+}
+
+
+
+
+
+
+/* ############heor image */
+
+
+
+
+
+
+
+
+
+/* <!-- ############hero image --> */
+
+/* <!-- ############   below hero image --> */
+.roww{
+    width: 100vw;
+    
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.row1{
+    display: grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+     gap: 20px;
+}
+.row2{
+    display: flex;
+    flex-direction: row; 
+    gap: 20px;
+}
+
+.cell1{
+    padding:20px;
+    background-color: white;
+    width: 310px;
+    height: 420px;
+}
+.cell1 p{
+    font-size: 21px;
+    padding-bottom: 10px;
+}
+.cell1 span>a{
+    color: #007185;
+    font-size: 14px;
+    text-decoration: none;
+}
+.cell11{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: ifr ifr;
+    row-gap: 30px;
+}
+
+
+.roww{
+    position: absolute;
+    top:500px ;
+}   
+
+
+/* ############################ */
+.home{
+    width: 100vw;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.decor{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 1400px;
+    background-color: white;
+    
+}
+.homedecor{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 0px 15px;   
+}
+.decor h2{
+    padding:20px;
+}
+
+
+/* ############################ foot #####*/
+
+.foooter{
+    width: 100vw;
+    position: absolute;
+    top: 1700px;
+    /* background-color: white;  */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.foot{
+    height: 130px;
+width: 95%;
+    margin:0px  auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2px;
+    background-color: rgb(255, 255, 255);
+}
+.foot button{
+    background-color: rgb(228, 150, 6);
+    width: 230px;
+    height: 28px;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    letter-spacing: .3px ;
+}
+.foot span{
+    font-size: 11px;
+    color:#000000;
+}
+.foot span a{
+text-decoration: none;
+}
+
+.backtotop{
+    height: 50px;
+    width: 100vw;
+    position: absolute;
+    top: 1850px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #021b33;
+    color: white;
+
+} 
+.backtotop a{
+    color: white;
+    text-decoration: none;
+
+}
+
+
