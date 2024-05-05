@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clock</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 2rem;
+            background-color: black;
+
+        }
+        h1{
+            color: white;
+            font-size: 3rem;
+        }
+
+        #para {
+            font-size: 3rem;
+            color: aquamarine;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1 id="start">Clock</h1>
+    <p id="para"></p>
+
+
+    <script>
+
+let start=document.querySelector('#start');
+    start.addEventListener('click',startTime);
+        function startTime() {
+            const todaytime = new Date();
+            let h = todaytime.getHours();
+            let m = todaytime.getMinutes();
+
+            let s = todaytime.getSeconds();
+            m = check(m);
+            s = check(s);
+            let para = document.querySelector('#para');
+            para.innerHTML = h + ":" + m + ":" + s;
+
+            setTimeout(startTime, 1000);
+        }
+
+        function check(n) {
+            if (n < 10) {
+                n = '0' + n;  // adding Zero in front of number<10
+            }
+            return n;
+        }
+
+    </script>
+</body>
+
+</html>
