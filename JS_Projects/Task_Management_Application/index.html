@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task Management Application</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body onload="loadingTasks()">
+    <div class="outerContainer">
+      <div class="topContainer">
+        <h1>Task Management Application</h1>
+        <div class="container">
+          <input type="text" id="taskInput" placeholder="Task Title" />
+          <input type="text" id="taskDescrip" placeholder="Task Description" />
+          <input type="date" id="taskDueDate" />
+          
+          <button id="addbtn">Add Task</button>
+        </div>
+        
+      </div>
+      <div class="bottomContainer">
+        <input type="search" id="searchInput" placeholder="Search Tasks" />
+        <label for="all">All</label>
+        <input type="radio" id="all" class="radio" name="TaskCompleted" />
+        <label for="completed">Complete</label>
+        <input type="radio" id="completed" class="radio" name="TaskCompleted" />
+        <label for="incomplete">Incomplete</label>
+        <input type="radio" id="incomplete" class="radio" name="TaskCompleted"/>
+      </div>
+      <div class="taskContainer">
+        <ul id="taskLists">
+          <!-- <li>
+            <div>
+              <h3>Task 1</h3>
+              <p>Task Description</p>
+              <span>Due Date</span>
+            </div>
+            <div>
+              <button>Complete</button>
+              <button>Edit</button>
+              <button>Delete</button>
+            </div>
+          </li> -->
+        </ul>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

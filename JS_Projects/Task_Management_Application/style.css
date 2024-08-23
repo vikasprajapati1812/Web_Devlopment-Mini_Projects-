@@ -1,0 +1,144 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  text-align: center;
+  background-image: url(./images/blob.svg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+.outerContainer {
+  min-height: 100vh;
+  min-width: 90vw;
+
+}
+
+/* ////////////////topContainer/////////////////// */
+.topContainer {
+  min-width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 1.25rem 1.5rem;
+  color: white;
+
+}
+.topContainer h1 {
+  margin-block: 1.25rem;
+  
+}
+.outerContainer input {
+  height: 2rem;
+  margin-inline: 0.25rem;
+  padding: 0.5rem 0.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+}
+#addbtn{
+  color: white;
+  background-color: blue;
+  padding: .5rem 1rem;
+  border: none;
+  border-radius: .5rem;
+  margin-top: 0.5rem;
+}
+#addbtn:hover{
+  background-color: rgb(97, 97, 201);
+}
+/* ////////////////bottomContainer/////////////////// */
+
+.bottomContainer {
+  min-width: 50vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+#searchInput{
+  margin-right: 1rem;
+}
+/* ////////////////taskContainer/////////////////// */
+
+.taskContainer ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.5rem;
+  /* border: 5px solid black; */
+}
+.taskContainer ul li {
+  width: 50vw;
+  background-color: white;
+  margin-bottom: 0.5rem;
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ccc;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+.completed {
+  text-decoration: line-through;
+  color: #ff0000;
+}
+
+.taskContainer ul li button{
+  margin-inline: 0.25rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.25rem;
+}
+.completeBtn{
+  background-color: green;
+  color: white;
+}
+.completeBtn:hover{
+  background-color: rgb(116, 206, 43);
+}
+
+.editBtn{
+  background-color: orange;
+  color: white;
+}
+.editBtn:hover{
+  background-color: rgba(255, 166, 0, 0.603);
+}
+
+.deleteBtn{
+  background-color: red;
+  color: white;
+}
+.deleteBtn:hover{
+  background-color: rgb(199, 68, 68);
+}
+
+button,input,label:hover{
+  cursor: pointer;
+}
+
+@media screen and (max-width:750px) {
+  .bottomContainer{
+    flex-direction: column;
+  }
+  .bottomContainer input{
+    margin-block: .5rem;
+  }
+  .topContainer{
+    flex-direction: column;
+  }
+  .taskContainer ul li{
+    flex-direction: column;
+    
+     }
+  input,button{
+    min-width:70%;
+    margin-bottom: 0.5rem;
+  }
+}
